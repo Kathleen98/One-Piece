@@ -131,20 +131,20 @@
     display: grid;
 }
 
-img{
+.container__lista__item__img{
     grid-area: img;
     width: 40vw;
     height: 60vh;
     border-radius: 30px;
 }
 
-h2{
+.container__lista__item__titulo{
     grid-area: h2;
     font-size: 3rem;
     text-transform: uppercase;
 }
 
-p{
+.container__lista__item__texto{
     grid-area: p;
     font-size: 2rem;
     margin-bottom: 5em;
