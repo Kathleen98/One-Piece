@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./src/img/favicon.ico" type="image/x-icon">
-    <script src="./src/js/main.js" defer></script>
     <link rel="stylesheet" href="./src/styles/main.css">
     <title>One Piece</title>
 </head>
@@ -59,11 +58,31 @@
             </ul>
         </nav>
         <section class="contador">
-            <h2 class="contador__titulo">Contagem para nova temporada na Netflix</h2>
-            <span class="contador__timer">
-                
-            </span>
+            <h2 class="contador__titulo">Contagem regressiva para a nova temporada na Netflix</h2>
+            <p>
+                <a class="contador__texto" href="https://www.netflix.com/title/80107103" target=" _blank">Clique aqui</a>
+            </p>
+            <div class="contador__timer">
+                <div class="contador__timer__item">
+                    <span class="valor" data-dias>00</span>
+                    <span class="nome">Dias</span>
+                </div>
+                <div class="contador__timer__item">
+                    <span class="valor" data-horas>00</span>
+                    <span class="nome">Horas</span>
+                </div>
+                <div class="contador__timer__item">
+                    <span class="valor" data-minutos>00</span>
+                    <span class="nome">Minutos</span>
+                </div>
+                <div class="contador__timer__item">
+                    <span class="valor" data-segundos>00</span>
+                    <span class="nome">Segundos</span>
+                </div>
+            </div>
+            </div>
         </section>
     </header>
+    <script src="./src/js/main.js" defer></script>
 </body>
 </html>

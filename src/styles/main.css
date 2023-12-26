@@ -1,3 +1,9 @@
+@font-face{
+    font-family: onePiece;
+    src: url('../font/one\ piece\ font.ttf');
+
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -60,8 +66,8 @@ nav::before{
 }
 
 .contador{
-    max-width: 40vw;
-    height: 50vh;
+    max-width: 60vw;
+    height: 60vh;
     background-color: #000000;
     position: relative;
     z-index: 1;
@@ -69,15 +75,52 @@ nav::before{
     top: 10em;
     opacity: 70%;
     border: 1px solid #FFF ;
-    border-radius: 10%;
+    border-radius: 30px;
     padding: 2em;
     display: flex;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .contador__titulo{
-    width: 50%;
-    font-size: 2rem;
+    width: 90%;
     color: #FFF;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.contador__texto{
+    font-size: 3rem;
+    color: #FFF;
+    font-weight: bold;
+    font-family: onePiece;
+}
+
+.contador__texto:hover{
+    color: #1698F1;
+}
+
+.contador__timer{
+    display: flex;
+    gap: 2em;
+}
+
+.contador__timer__item{
+    color: #FFF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.valor{
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+.nome{
+    font-size: 3rem;
+    font-family: onePiece;
+    font-weight: bold;
 }
