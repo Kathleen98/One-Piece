@@ -3,6 +3,16 @@ const horasElemento = document.querySelector('[data-horas]');
 const minutosElemento = document.querySelector('[data-minutos]');
 const segundosElemento = document.querySelector('[data-segundos]');
 
+const luff = document.querySelector('[data-luff]');
+const zoro = document.querySelector('[data-zoro]');
+const nami = document.querySelector('[data-nami]');
+const sanji = document.querySelector('[data-sanji]');
+const robin = document.querySelector('[data-robin]');
+const chopper = document.querySelector('[data-chopper]');
+const usopp = document.querySelector('[data-usopp]');
+const imgPersonagens = document.querySelector('.container__lista__item__img'); 
+
+
 const render = (dias, horas, minutos, segundos) => {
     diasElemento.innerHTML = dias;
     horasElemento.innerHTML = horas;
@@ -28,3 +38,11 @@ const contador = () =>{
 }
 
 setInterval( contador, 1000);
+
+luff.addEventListener('click', () => {
+
+})
+
+function alterarPersonagens(personagem){
+    imgPersonagens.setAttribute('src', `./src/img/`)
+}
