@@ -7,7 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./src/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
     <link rel="stylesheet" href="./src/styles/main.css">
+    <script src="./src/js/main.js" defer></script>
+    <script src="./src/js/procurados.js" defer></script>
     <title>One Piece</title>
 </head>
 <body>
@@ -39,40 +42,29 @@
         </section>
     </header>
 
-    <main class="container">
-        <nav class="container__personagens">
-            <button data-luff class="container__personagens__bt">
-                Luff
-            </button>
-            <button data-zoro class="container__personagens__bt">
-                Zoro
-            </button>
-            <button data-nami class="container__personagens__bt">
-                Nami
-            </button>
-            <button data-sanji class="container__personagens__bt">
-                Sanji
-            </button>
-            <button data-robin class="container__personagens__bt">
-                Robin
-            </button>
-            <button data-chopper class="container__personagens__bt">
-                Chopper
-            </button>
-            <button data-usopp class="container__personagens__bt">
-                Usopp
-            </button>
-        </nav>
-
-        <ul class="container__lista">
-            <li class="container__lista__item container__lista__item--active">
-                <img class="container__lista__item__img" src="./src/img/luff.jpg" alt="Luff">
-                <h2 class="container__lista__item__titulo">Luff</h2>
-                <p class="container__lista__item__texto">
-                    Monkey D. Luffy, é um personagem fictício e o protagonista da franquia One Piece criada por Eiichiro Oda. Ele é apresentado como um jovem cujo corpo ganha as propriedades de borracha após ter comido a Gomu-Gomu no Mi, uma das várias frutas amaldiçoadas conhecidas como Akuma no Mi ou Frutas do Diabo. 
-                </p>
-            </li>
-        </ul>
+    <main class="container__main">
+        <div class="container">
+            <h1 class="container__titulo">Procurados</h1>
+            <div class="container__slider">
+                <button id="prev-slide" class="slide-button material-symbols-rounded">
+                    chevron_left
+                  </button>
+                <div class="container__img">
+                    <img src="./src/img/produradoLuff.jpg" alt="">
+                    <img src="./src/img/procuradoZoro.jpg" alt="">
+                    <img src="./src/img/procuradoNami.jpg" alt="">
+                    <img src="./src/img/procuradoUsopp.png" alt="">
+                    <img src="./src/img/procuradoRobin.jpg" alt="">
+                    <img src="./src/img/procuradoChopper.jpg" alt="">
+                    <img src="./src/img/procuradoFranky.jpg" alt="">
+                    <img src="./src/img/procuradoSanji.jpg" alt="">
+                    <img src="./src/img/procuradoBrook.jpg" alt="">
+                </div>
+                <button id="next-slide" class="slide-button material-symbols-rounded">
+                    chevron_right
+                  </button>
+            </div>
+        </div>
     </main>
 
     <!-- <footer>
@@ -82,6 +74,6 @@
         </p>
     </footer> -->
     
-    <script src="./src/js/main.js" defer></script>
+    
 </body>
 </html>

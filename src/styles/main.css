@@ -1,7 +1,19 @@
+@import url('./procurados.css');
+
 @font-face{
     font-family: onePiece;
     src: url('../font/one\ piece\ font.ttf');
 
+}
+
+@font-face{
+    font-family: wanted;
+    src: url('../font/times-new-roman.ttf');
+}
+
+@font-face{
+    font-family: dead;
+    src: url('../font/century-old-style.otf');
 }
 
 *{
@@ -90,8 +102,8 @@
     font-weight: bold;
 }
 
-.container{
-
+.container__main{
+    padding: 3em 4em;
 
 }
 
@@ -133,7 +145,7 @@
 
 .container__lista__item__img{
     grid-area: img;
-    width: 40vw;
+    width: 45vw;
     height: 60vh;
     border-radius: 30px;
 }
@@ -149,3 +161,4 @@
     font-size: 2rem;
     margin-bottom: 5em;
 }
+
