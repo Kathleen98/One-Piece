@@ -1,0 +1,137 @@
+.hero{
+    position: relative;
+    background: url('https://images3.alphacoders.com/111/111955.jpg');
+    background-size: 100vw 100vh;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before{
+        content: '';
+        position: absolute;
+        background-color: #000000;
+        width: 100vw;
+        height: 90vh;
+        opacity: .4;
+    }
+
+    &__counter{
+        width: 50vw;
+        height: 55vh;
+
+        
+        &::before{
+            content: '';
+            position: absolute;
+            background: #FFF;
+            width: 50vw;
+            height: 55vh;
+            opacity: .6;
+            border-radius: 40px;
+        }
+
+        &__texts{
+            padding: 4em 0;
+            position: relative;
+            display: grid;
+            justify-items: center;
+            grid-template-rows: repeat(3, 0.5fr);
+            text-transform: uppercase;
+            font-weight: bold;
+
+            &__title{
+                font-size: 2rem;
+                width: 45vw;
+                text-align: center;
+                padding-bottom: 1em;
+            }
+
+            &__text{
+                color: #FFF;
+                font-size: 1.8rem;
+
+                &:hover{
+                    color: aqua;
+                }
+            }
+
+            &__timer{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 2em;
+
+                &__item{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    &__value{
+                        font-size: 6rem;
+                    }
+
+                    &__name{
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+
+    }
+
+    
+}
+
+@media(max-width: 640px){
+    .hero{
+        background-size: 100vw 90vh;
+        height: 100vh;
+
+        &__counter{
+            width: 240px;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &::before{
+                width: 240px;
+                height: 90%;
+            }
+
+
+            &__texts{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &__title{
+                    font-size: 1.3em;
+                    width: 70vw;
+                }
+
+                &__text{
+                    font-size: 1.4em;
+                }
+
+                &__timer{
+                    grid-template-columns: repeat(2, 0.5fr);
+                    
+                    &__item{
+
+                        &__value{
+                            padding-top: 1em;
+                            font-size: 2rem;
+                        }
+
+                        &__name{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

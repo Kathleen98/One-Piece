@@ -1,0 +1,50 @@
+@use 'variables';
+
+.wanted{
+
+    &__title{
+        font-size: 3.5rem;
+        font-family: century;
+        text-align: center;
+        text-transform: uppercase;
+        color: #3F3128;
+        border-bottom: 2px solid #3F3128;
+        padding-bottom: 0.5em;
+    }
+
+    &__slider{
+        display: flex;
+        align-items: center;
+        padding: 4em 0;
+        width: 90vw;
+        height: 80vh;
+
+        &__button{
+            background: #D7CCBA;
+            border-radius: 100%;
+            font-size: 2em;
+            width: 3vw;
+            height: 5.5vh;
+
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.2);
+                transition: 500ms linear;
+            }
+        }
+
+
+        &__img{
+            display: grid;
+            grid-template-columns: repeat(2, 0.5fr );
+            gap: 0.7em;
+            overflow-x: hidden;
+
+            &__item{
+                width: 21vw;
+                height: 70vh;
+                
+            }
+        }
+    }
+}

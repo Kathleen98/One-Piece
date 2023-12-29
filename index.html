@@ -10,77 +10,73 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
     <link rel="stylesheet" href="./src/styles/main.css">
     <script src="./src/js/main.js" defer></script>
-    <script src="./src/js/procurados.js" defer></script>
+    <script src="./src/js/wanted.js" defer></script>
     <script src="./src/js/videos.js" defer></script>
     <title>One Piece</title>
 </head>
 <body>
-    <header class="hero">
-        <section class="contador">
-            <h2 class="contador__titulo">Contagem regressiva para a nova temporada na Netflix</h2>
+    <header class="hero" id="hero">
+        <section class="hero__counter">
+            <div class="hero__counter__texts">
+                <h2 class="hero__counter__texts__title">Contagem regressiva para a nova temporada na Netflix</h2>
             <p>
-                <a class="contador__texto" href="https://www.netflix.com/title/80107103" target=" _blank">Clique aqui</a>
+                <a class="hero__counter__texts__text" href="https://www.netflix.com/title/80107103" target=" _blank">Clique aqui</a>
             </p>
-            <div class="contador__timer">
-                <div class="contador__timer__item">
-                    <span class="valor" data-dias>00</span>
-                    <span class="nome">Dias</span>
+            <div class="hero__counter__texts__timer">
+                <div class="hero__counter__texts__timer__item">
+                    <span class="hero__counter__texts__timer__item__value" data-dias>00</span>
+                    <span class="hero__counter__texts__timer__item__name">Dias</span>
                 </div>
-                <div class="contador__timer__item">
-                    <span class="valor" data-horas>00</span>
-                    <span class="nome">Horas</span>
+                <div class="hero__counter__texts__timer__item">
+                    <span class="hero__counter__texts__timer__item__value" data-horas>00</span>
+                    <span class="hero__counter__texts__timer__item__name">Horas</span>
                 </div>
-                <div class="contador__timer__item">
-                    <span class="valor" data-minutos>00</span>
-                    <span class="nome">Minutos</span>
+                <div class="hero__counter__texts__timer__item">
+                    <span class="hero__counter__texts__timer__item__value" data-minutos>00</span>
+                    <span class="hero__counter__texts__timer__item__name">Minutos</span>
                 </div>
-                <div class="contador__timer__item">
-                    <span class="valor" data-segundos>00</span>
-                    <span class="nome">Segundos</span>
+                <div class="hero__counter__texts__timer__item">
+                    <span class="hero__counter__texts__timer__item__value" data-segundos>00</span>
+                    <span class="hero__counter__texts__timer__item__name">Segundos</span>
                 </div>
+            </div>
             </div>
             </div>
         </section>
     </header>
 
-    <main class="container__main">
-        <div class="container">
-            <h1 class="container__titulo">Procurados</h1>
-            <div class="container__slider">
-                <button id="prev-slide" class="slide-button material-symbols-rounded">
-                    chevron_left
-                  </button>
-                <div class="container__img">
-                    <img src="./src/img/produradoLuff.jpg" alt="">
-                    <img src="./src/img/procuradoZoro.jpg" alt="">
-                    <img src="./src/img/procuradoNami.jpg" alt="">
-                    <img src="./src/img/procuradoUsopp.png" alt="">
-                    <img src="./src/img/procuradoRobin.jpg" alt="">
-                    <img src="./src/img/procuradoChopper.jpg" alt="">
-                    <img src="./src/img/procuradoFranky.jpg" alt="">
-                    <img src="./src/img/procuradoSanji.jpg" alt="">
-                    <img src="./src/img/procuradoBrook.jpg" alt="">
+    <!-- <main class="main">
+        <div class="wanted">
+            <h1 class="wanted__title">Procurados</h1>
+            <div class="wanted__slider">
+                <div class="wanted__slider__img">
+                    <img class="wanted__slider__img__item" src="https://i.pinimg.com/564x/78/8d/5b/788d5bca35bb900388a83219e04f21ba.jpg" alt="">
+                    <div>
+                        <h2>
+                            Luff
+                        </h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo saepe atque tempore eveniet id, dolore architecto ullam mollitia cum ut debitis maiores assumenda quod dolor reprehenderit molestiae, fugiat quae ab.
+                        </p>
+                    </div>
                 </div>
-                <button id="next-slide" class="slide-button material-symbols-rounded">
-                    chevron_right
-                  </button>
             </div>
         </div>
 
         <section class="videos">
-            <h1 class="container__titulo">Videos</h1>
+            <h1 class="videos__titulo">Videos</h1>
             <ul class="videos__container">
             </ul>
         </section>
 
-    </main>
+    </main> -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <img  src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/72eb1bc3-22b9-4391-bc7f-972c258b147f/dadvwba-bc73559a-54c3-4a91-896d-706decc63493.png/v1/fill/w_1024,h_667/one_piece_strawhat___render_png_by_joyboytv_dadvwba-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjY3IiwicGF0aCI6IlwvZlwvNzJlYjFiYzMtMjJiOS00MzkxLWJjN2YtOTcyYzI1OGIxNDdmXC9kYWR2d2JhLWJjNzM1NTlhLTU0YzMtNGE5MS04OTZkLTcwNmRlY2M2MzQ5My5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.PaXttTXLjLFH6gIgftdok4uWsJmDrBaT44s_93FSTig" alt="Chapeu de palha do Luff">
         <p>
             &copy;Copyrigth - 2023 - desenvolvido por Kathleen Santos
         </p>
-    </footer>
+    </footer> -->
     
     
 </body>
