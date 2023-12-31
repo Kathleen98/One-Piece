@@ -1,15 +1,30 @@
+@use 'variables';
 @use 'hero';
-@use 'wanted';
+@use 'timer';
+
+font-face{
+    font-family: 'times-new';
+    src: url(../font/times-new-roman.ttf);
+}
+
+font-face{
+    font-family: 'one piece';
+    src: url(../font/one\ piece\ font.ttf);
+}
+
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: times-new;
+    overflow-x: hidden;
 }
 
 .main{
      padding: 2em 16em;
+     background: #EEEEEE;
 }
 
 

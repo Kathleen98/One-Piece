@@ -1,6 +1,7 @@
 @use 'variables';
 
 .wanted{
+    
 
     &__title{
         font-size: 3.5rem;
@@ -9,42 +10,45 @@
         text-transform: uppercase;
         color: #3F3128;
         border-bottom: 2px solid #3F3128;
-        padding-bottom: 0.5em;
+        padding-bottom: 0.3em;
     }
 
-    &__slider{
-        display: flex;
-        align-items: center;
-        padding: 4em 0;
-        width: 90vw;
-        height: 80vh;
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3em 0;
 
-        &__button{
-            background: #D7CCBA;
-            border-radius: 100%;
-            font-size: 2em;
-            width: 3vw;
-            height: 5.5vh;
-
-            &:hover{
-                cursor: pointer;
-                transform: scale(1.2);
-                transition: 500ms linear;
-            }
-        }
-
-
-        &__img{
+        &__list{
             display: grid;
-            grid-template-columns: repeat(2, 0.5fr );
-            gap: 0.7em;
-            overflow-x: hidden;
+            grid-template-columns: 0.3fr 1fr;
+            grid-template-areas: "img title" "img text";
+            padding: 2em 0;
+            border-bottom: 3px dotted #3F3128;
 
-            &__item{
-                width: 21vw;
-                height: 70vh;
-                
+            &--right{
+                flex-direction: row-reverse;
             }
+
+            &__img{
+                padding-right: 3em;
+                width: 18vw;
+                height: 50vh;
+                grid-area: img;
+            }
+    
+            &__title{
+                color: #3F3128;
+                font-size: 2rem;
+                padding-bottom: 1em;
+                text-transform: uppercase;
+                grid-area: title;
+            }
+    
+            &__text{
+                font-size: 1.5rem;
+                grid-area: text;
+            }
+    
         }
     }
 }

@@ -1,0 +1,63 @@
+.timer{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    background: #EEEEEE;
+    border-radius: 20px;
+    margin: 2em 0;
+
+    &__container{
+        width: 45%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 0.5fr 1fr;
+        padding: 3em;
+        border-radius: 20px;
+        background: #FFF;
+
+        &__title{
+            color: #004EC5;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        &__counter{
+            display: flex;
+            gap: 0 2em;
+
+            &__item{
+                display: grid;
+                text-align: center;
+
+                #number{
+                    font-size: 6rem;
+                    font-size: bold;
+                }
+
+                #name{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+    }
+
+    &__image{
+        width: 45%;
+        height: 40vh;
+        background: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        
+        img{
+            width: 90%;
+            height: 35vh;
+            border-radius: 10px;
+        }
+    }
+}

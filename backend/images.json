@@ -3,55 +3,64 @@
         {
             "id": "1",
             "name": "Luff",
-            "src": "https://i.pinimg.com/564x/78/8d/5b/788d5bca35bb900388a83219e04f21ba.jpg"
+            "src": "https://i.pinimg.com/564x/78/8d/5b/788d5bca35bb900388a83219e04f21ba.jpg",
+            "description": "Monkey D. Luffy nasceu na Vila Foosha, parte do Reino Goa e local no qual a história começa. Ele é filho do revolucionário Monkey D. Dragon e neto do Vice-Almirante Monkey D. Garp, fazendo parte da Família dos D.; seus membros são considerados Inimigos Naturais de Deus, mas o real motivo por inicial é um mistério para todos."
         },
 
         {
             "id": "2",
             "name": "Zoro",
-            "src": "https://i.pinimg.com/564x/4f/80/ea/4f80ea2791086029a6922d3d131c26fe.jpg"
+            "src": "https://i.pinimg.com/564x/4f/80/ea/4f80ea2791086029a6922d3d131c26fe.jpg",
+            "description": "Zoro era um caçador de piratas que por fim se torna um quando é convencido pelo protagonista Monkey D. Luffy a ser o primeiro membro de sua tripulação, os Piratas do Chapéu de Palha. Dentro do grupo, Zoro tem a função de combatente e muitas vezes assume o papel de imediato do bando. Sua maior característica é lutar usando três katanas em um estilo de esgrima que ele mesmo inventou, o santoryu (三刀流 Santōryū?). Enquanto Luffy almeja ser o Rei dos Piratas, Zoro busca se tornar o maior espadachim do mundo e para isso precisa derrotar o atual detentor do título, Dracule Mihaw"
         },
 
         {
             "id": "3",
             "name": "Nami",
-            "src": "https://i.pinimg.com/564x/6b/b2/a6/6bb2a6a71aa20748430265108af6d3c8.jpg"
+            "src": "https://i.pinimg.com/564x/6b/b2/a6/6bb2a6a71aa20748430265108af6d3c8.jpg",
+            "description": " Nami é uma órfã de guerra. Encontrada em uma batalha quando ainda era bebê, ela foi adotada -- junto de Nojiko, outra órfã -- por Bell-mère, uma integrante da marinha. Juntas, as três se tornaram tão próximas quanto uma família pode ser. Ainda quando criança, Nami desenvolveu uma paixão enorme por desenhar mapas e aprender sobre navegação. Seu maior objetivo é bastante grandioso: criar um mapa completo do mundo todo. Infelizmente, as finanças da família não permitiam que a jovem comprasse livros para estudar, levando-a a roubar da livraria da vila -- o primeiro passo para uma carreira bem sucedida de gatuna."
         },
 
         {
             "id": "4",
             "name": "Robin",
-            "src": "https://i.pinimg.com/564x/70/29/6e/70296ec9a42b9e69b1dc353cb49293ff.jpg"
+            "src": "https://i.pinimg.com/564x/70/29/6e/70296ec9a42b9e69b1dc353cb49293ff.jpg",
+            "description": "Nico Robin nasceu na cidade de Ohara e veio de uma família de arqueólogos. Sua mãe, Nico Olivia saiu para o mar em busca da verdadeira história quando a garota tinha apenas 2 anos, sendo deixada aos cuidados de seu tio Roji e sua esposa. O tio deixava bem claro que não gostava da presença dela, maltratando a criança e não permitindo que ela participasse de qualquer reunião familiar. Além disso, seus poderes de invocar partes do corpo em qualquer lugar devido sua Hana Hana no Mi assustava outras crianças e até alguns adultos. Robin então encontrou conforto nos livros e na Árvore do Conhecimento, onde os arqueólogos ficavam. Lá ela faz amizade com Clover, o diretor da biblioteca de Ohara. Aos oito anos a garota passa no exame de arqueologia, e se torna um, mas logo depois ela é expulsa por Clover após dizer que ia atrás da verdadeira história – assim como sua mãe."
         },
 
         {
             "id": "5",
             "name": "Chopper",
-            "src": "https://i.pinimg.com/564x/54/9a/f6/549af64984182cdf45c974ce320888ae.jpg"
+            "src": "https://i.pinimg.com/564x/54/9a/f6/549af64984182cdf45c974ce320888ae.jpg",
+            "description": "Chopper inicialmente era uma rena comum que tinha o nariz azul, o que fez com que ele fosse tratado como um estranho até mesmo pela sua família. Então ele acaba encontrando a Hito Hito no Mi, fruta do humano, dando além de um novo visual, mais inteligência, fazendo ele ser expulso de seu grupo. Sem saber o que fazer ele vai até um vilarejo humano, mas não consegue se comunicar e acaba sendo baleado, já que as pessoas achavam que ele era um yeti. Chopper é resgatado por Dr. Hiriluk que cuida de seus ferimentos, dá o nome de Chopper para a rena e torna ele seu assistente. Os dois visitavam todas as casas do reino já que o rei do local, Wapol havia banido todos os médicos da ilha. Quando a saúde de Hiriluk piorou, ele decidiu expulsar Chopper da casa para que ele não veja sua situação ficando pior. Quando a rena descobre o motivo de sua expulsão, ele decide que vai encontrar uma cura e vai atrás de um cogumelo chamado de Amiudake."
         },
 
         {
             "id": "6",
             "name": "Usopp",
-            "src": "https://i.pinimg.com/564x/ec/3b/ea/ec3beada52663335713e4e1c9e7e6416.jpg"
+            "src": "https://i.pinimg.com/564x/ec/3b/ea/ec3beada52663335713e4e1c9e7e6416.jpg",
+            "description": "Usopp é filho de Yasopp, um dos Piratas do Ruivo, que partiu para o mar deixando sua esposa e filho para trás. Com isso, Usopp começa a mentir para a vila Syrup, dizendo que piratas estão se aproximando, e também para sua mãe, que estava muito doente, já que ele acreditava que isso fortaleceria seu espírito. Com a morte da sua mãe, ele continuou alertando todos da vila da chegada de Piratas. Muitos do vilarejo algumas vezes perseguiam ou arremessavam coisas nele, outros usavam os gritos de Usopp como uma forma de alarme, já que era algo que ele fazia todos os dias. Além disso, o garoto inventava histórias para entreter Kaya, uma garota que estava doente e precisava passar a maior parte do tempo em repouso na sua cama. Luffy, Zoro e Nami chegam na ilha Syrup em busca de um barco para poder adentrar a Grand Line e Usopp, ao ver piratas de verdade, fica muito feliz e tenta enganar o grupo afirmando ser líder de uma grande frota de Piratas. Luffy não acredita, mas os dois acabam se tornando amigos depois que ele descobre que Usopp é filho de um dos integrantes dos Piratas do Ruivo."
         },
 
         {
             "id": "7",
             "name": "Franky",
-            "src": "https://i.pinimg.com/564x/eb/35/fe/eb35fea92265735e76eb1fc83b18fe7c.jpg"
+            "src": "https://i.pinimg.com/564x/eb/35/fe/eb35fea92265735e76eb1fc83b18fe7c.jpg",
+            "description": "Seu nome original é Cutty Flam. Ele é um dos últimos piratas a entrar no bando dos Piratas do Chapéu de Palha. Franky é uma pessoa bem agitada e bastante sociável, fazendo amizades e alianças rapidamente, assim como Luffy, protagonista da série. Apesar dos dois não gostarem um do outro, por causa de brigas em que se envolveram, os dois têm um respeito mútuo, talvez por ter caráteres parecidos. Ele costuma falar alto, quase sempre gritando e tem uma apresentação própria, na qual ele canta e dança. Quando se emociona logo compõe uma música sobre isso. É muito orgulhoso, e detesta admitir quando está chorando."
         },
 
         {
             "id": "8",
             "name": "Brook",
-            "src": "https://i.pinimg.com/564x/19/bb/2e/19bb2eb4756747576c8eeb3b6e149f87.jpg"
+            "src": "https://i.pinimg.com/564x/19/bb/2e/19bb2eb4756747576c8eeb3b6e149f87.jpg",
+            "description": "Brook é um esqueleto que foi encontrado pelos Piratas do Chapéu de Palha a bordo de um navio fantasma, depois que eles abriram um misterioso barril a deriva no oceano aberto assim que escaparam de uma misteriosa tempestade. Ele é um músico que comeu a Yomi Yomi no Mi e é um morto-vivo, sendo trazido de volta em um estado pseudo-imortal por causa da fruta. Ele é o nono membro da tripulação dos Chapeu de Palha e o oitavo a aceitar a aderir a tripulação de Luffy. Ele também é um dos dois atuais espadachins a bordo do navio, sendo o outro Roronoa Zoro. Ele é o músico que há muito tempo Luffy queria desde que começou sua jornada."
         },
 
         {
             "id": "9",
             "name": "Sanji",
-            "src": "https://i.pinimg.com/564x/0b/10/24/0b102489f662b8779e40f8cbebf77a6b.jpg"
+            "src": "https://i.pinimg.com/564x/0b/10/24/0b102489f662b8779e40f8cbebf77a6b.jpg",
+            "description": "Vinsmoke Sanji, faz parte da família real do reino de Germa, junto com seus outros três irmãos. Seu pai, Vinsmoke Judge, planejava modificar geneticamente todos os seus filhos, para que eles tivessem força sobre-humana e nenhuma emoção, os tornando, eventualmente, “soldados perfeitos”. A mãe de Sanji, Sora, era contra as práticas de seu marido, e decidiu tomar uma droga para que eles pudessem se tornar crianças normais, à custo de sua saúde. Somente Sanji é afetado pela droga, fazendo com que o garoto fosse mais fraco que seus irmãos. Enquanto Sora era viva, Sanji sempre cozinhava para ela, e em determinado momento, ela decidiu que só comeria o que o garoto cozinhasse, fazendo com que ele tivesse um interesse maior pela cozinha."
         }
     ]
 }
