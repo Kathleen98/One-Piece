@@ -26,7 +26,7 @@ font-face {
   background-color: #000000;
   width: 100vw;
   height: 100vh;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .hero__container {
   position: relative;
@@ -118,7 +118,7 @@ font-face {
 .wanted__title {
   text-align: center;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #392A25;
 }
 .wanted__container {
@@ -140,6 +140,82 @@ font-face {
 .wanted__container__list__item:hover {
   transform: scale(1.1);
   transition: 0.7s ease-in-out;
+}
+
+.nav {
+  width: 100vw;
+  height: 12vh;
+  position: relative;
+  background: #8CD4BC;
+  overflow-y: hidden;
+}
+.nav::before {
+  content: "";
+  position: absolute;
+  background: #000000;
+  width: 100vw;
+  height: 15vh;
+  display: block;
+  opacity: 0.5;
+  z-index: 0;
+}
+.nav__container {
+  position: relative;
+  padding: 0.5em 3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__container__img {
+  width: 4vw;
+}
+.nav__container__list {
+  display: flex;
+  gap: 0 1em;
+  font-size: 1.5rem;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav__container__list a {
+  color: #FFF;
+  text-decoration: none;
+}
+.nav__container__list a:hover {
+  -webkit-text-decoration: underline #80D3FF;
+          text-decoration: underline #80D3FF;
+}
+
+main {
+  padding: 2em 16em;
+  background: #EEEEEE;
+}
+
+div {
+  display: flex;
+  background: #FFF;
+  border-radius: 20px;
+  padding: 2em 8em;
+}
+div .story__title {
+  font-size: 3rem;
+  color: #392A25;
+  text-transform: uppercase;
+}
+div .story__texts {
+  padding-top: 1em;
+  font-size: 1.5rem;
+}
+div .story__texts__text {
+  padding: 1em 0;
+  display: flex;
+  line-height: 2.5em;
+}
+div .story__texts__text img {
+  width: 100vw;
+  height: 30vh;
+  border-radius: 10px;
+  margin: 0 1em;
 }
 
 font-face {

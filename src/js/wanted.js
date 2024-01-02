@@ -5,6 +5,7 @@ async function searchShowImages () {
     const search = await fetch("http://localhost:3000/images");
     const images = await search.json();
 
+    
       images.forEach((image) =>{
         if(image.url == ""){
           throw new Error('Imagem sem url cadastrada')
@@ -25,12 +26,15 @@ async function searchShowImages () {
       })
 
   }catch(error) {
-    containerImages.innerHTML = `<p>Houve um erro ao carregas as imagens: ${error}</p>`
+    const paragrafyError = document.createElement('p');
+    paragrafyError.textContent = `Houve um erro ao carregas as imagens: ${error}`
+    containerImages.appendChild(paragrafyError);
   }
 
 }
 
 
-searchShowImages()
+searchShowImages();
+
 
   
