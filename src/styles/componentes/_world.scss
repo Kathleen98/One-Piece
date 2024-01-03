@@ -19,7 +19,7 @@
         grid-area: north;
     }
 
-    &__north,&__south,&__east,&__west{
+    &__container{
         width: 20vw;
         height: 65vh;
         display: flex;
@@ -62,7 +62,7 @@
             text-align: center;
         }
 
-        &__north,&__south,&__east,&__west{
+        &__container{
             display: flex;
             flex-direction: column;
             align-items: center;

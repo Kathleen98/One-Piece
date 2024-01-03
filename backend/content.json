@@ -55,6 +55,41 @@
         }
     ],
 
+    "world": [
+        {
+            "id": "1",
+            "name": "North Blue",
+            "image": "https://animementor.com/wp-content/uploads/2022/08/North-Blue-.jpg",
+            "paragrafy": "O mar onde as ondas dançam ao ritmo da aventura! Este é o oceano que faz fronteira com o East Blue, West Blue e é dividido pela Linha Vermelha e pela Grand Line. Um lugar cheio de histórias incríveis que fariam até mesmo o Rei dos Piratas levantar a sobrancelha!",
+            "link": "Ver mais"
+        },
+
+        {
+            "id": "2",
+            "name": "South Blue",
+            "image": "https://pm1.aminoapps.com/6899/2537be546fdc0eae6ce02cc0bcf91bbc8b6a9195r4-660-330_00.jpg",
+            "paragrafy": "O oceano que faz seu nome sussurrar pelas ondas como uma canção de aventura! Aqui, onde os mares se estendem até onde os olhos podem ver, e ilhas escondidas pontilham a vastidão azul, o South Blue é um reino de mistério e emocionantes histórias.",
+            "link": "Ver mais"
+        },
+
+        {   
+            "id": "3",
+            "name": "East Blue",
+            "image": "./src/img/east_blue_map.jpg",
+            "paragrafy": "Na Grand Line, onde as ondas escondem mistérios e os corações dos piratas batem mais forte, a fama toma formas surpreendentes. O que é considerado assombroso no East Blue pode ser apenas uma brisa suave nas turbulentas águas da Grand Line.",
+            "link": "Ver mais"
+        },
+
+        {
+            "id": "4",
+            "name": "West Blue",
+            "image": "https://pm1.aminoapps.com/7332/516f9c6beda3d49346e55af1549e505cc07eac17r4-492-246_00.jpg",
+            "paragrafy": "O oceano onde os ventos sussurram segredos e cada onda conta uma história única! Uma vastidão de mistérios que se estende até onde os olhos podem ver, onde o desconhecido aguarda aqueles corajosos o suficiente para desbravá-lo.",
+            "link": "Ver mais"
+        }
+
+    ],
+
     "videos": [
         {
             "id":"1",
