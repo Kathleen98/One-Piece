@@ -1,19 +1,5 @@
-@use 'variables';
 @use 'hero';
-@use 'timer';
-@use 'wanted';
-@use 'nav';
-@use 'story';
-
-font-face{
-    font-family: 'times-new';
-    src: url(../font/times-new-roman.ttf);
-}
-
-font-face{
-    font-family: 'one piece';
-    src: url(../font/one\ piece\ font.ttf);
-}
+@use 'variables';
 
 
 *{
@@ -21,13 +7,73 @@ font-face{
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: times-new;
+    font-family:  variables.$fontFamily;
     overflow-x: hidden;
 }
 
 .main{
      padding: 2em 16em;
-     background: #EEEEEE;
+     background: variables.$background;
 }
 
+.story{
+    @include variables.containers;
+    background: variables.$colorWhite;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+   
+    &__texts{
+
+        &__title{
+            @include variables.titles()
+        }
+
+        &__text{
+            @include variables.texts()
+        }
+    }
+
+    &__img{
+        @include variables.images();
+        width: 30vw;
+    }
+
+    &__link{
+        @include variables.btn();
+    }
+}
+
+
+@media(max-width:variables.$breakpointCell){
+    .main{
+        padding: 1em 1em;
+    }
+    .story{
+        display: block;
+        
+        &__texts{
+
+            &__title{
+                font-size: variables.$fontTitleCell;
+            }
+
+            &__text{
+                font-size: variables.$fontTextCell;
+            }
+
+        }
+
+        &__img{
+            @include variables.images();
+            width: 70vw;
+        }
+
+        &__link{
+            @include variables.btn();
+            margin-top: 1em;
+            width: 30vw;
+        }
+    }
+}
 

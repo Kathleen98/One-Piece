@@ -3,16 +3,6 @@ font-face {
   src: url(../font/century-old-style.otf);
 }
 
-font-face {
-  font-family: "one piece";
-  src: url(../font/one\ piece\ font.ttf);
-}
-
-font-face {
-  font-family: "times-new";
-  src: url(../font/times-new-roman.ttf);
-}
-
 .hero {
   position: relative;
   background: url("https://images7.alphacoders.com/133/1330380.jpeg");
@@ -38,6 +28,9 @@ font-face {
 .hero__container__img {
   width: 4vw;
 }
+.hero__container__img__item {
+  width: 4vw;
+}
 .hero__container__list {
   display: flex;
   gap: 0 1em;
@@ -54,190 +47,142 @@ font-face {
   -webkit-text-decoration: underline #80D3FF;
           text-decoration: underline #80D3FF;
 }
-
-.timer {
-  width: 100%;
-  height: 40vh;
-  display: flex;
-  justify-content: space-between;
-  background: #EEEEEE;
-  border-radius: 20px;
-  margin: 2em 0;
-  color: #392A25;
-}
-.timer__container {
-  width: 50%;
-  height: 100%;
-  display: grid;
-  justify-content: center;
-  grid-template-rows: 0.5fr 1fr;
-  padding: 3em;
-  border-radius: 20px;
-  background: #FFF;
-}
-.timer__container__title {
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 1.2rem;
-}
-.timer__container__counter {
-  display: flex;
-  gap: 0 2em;
-}
-.timer__container__counter__item {
-  display: grid;
-  text-align: center;
-}
-.timer__container__counter__item #number {
-  font-size: 6rem;
-  font-size: bold;
-}
-.timer__container__counter__item #name {
-  font-size: 1.3rem;
-}
-.timer__image {
-  width: 47%;
-  height: 40vh;
-  background: #FFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-}
-.timer__image img {
-  width: 90%;
-  height: 35vh;
-  border-radius: 10px;
-}
-
-.wanted {
-  background: #FFF;
-  border-radius: 20px;
-  padding-top: 2em;
-}
-.wanted__title {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 3rem;
-  color: #392A25;
-}
-.wanted__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  padding: 2em;
-}
-.wanted__container__list {
-  width: 17vw;
-  height: 50vh;
-  padding: 1em;
-}
-.wanted__container__list__item {
-  border-radius: 10px;
+.hero__hamburguer {
+  display: none;
   width: 15vw;
-  height: 40vh;
-}
-.wanted__container__list__item:hover {
-  transform: scale(1.1);
-  transition: 0.7s ease-in-out;
-}
-
-.nav {
-  width: 100vw;
-  height: 12vh;
-  position: relative;
-  background: #8CD4BC;
-  overflow-y: hidden;
-}
-.nav::before {
-  content: "";
+  height: 10vh;
   position: absolute;
-  background: #000000;
-  width: 100vw;
-  height: 15vh;
-  display: block;
-  opacity: 0.5;
-  z-index: 0;
-}
-.nav__container {
-  position: relative;
-  padding: 0.5em 3em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.nav__container__img {
-  width: 4vw;
-}
-.nav__container__list {
-  display: flex;
-  gap: 0 1em;
-  font-size: 1.5rem;
-  list-style: none;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.nav__container__list a {
-  color: #FFF;
-  text-decoration: none;
-}
-.nav__container__list a:hover {
-  -webkit-text-decoration: underline #80D3FF;
-          text-decoration: underline #80D3FF;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  background: url("../img/menu-hamburguer.png") no-repeat center center;
+  background-size: 10vw 5vh;
 }
 
-main {
-  padding: 2em 16em;
-  background: #EEEEEE;
+@media (max-width: 640px) {
+  .hero {
+    background-size: 100vw 30vh;
+    height: 30vh;
+    overflow-x: hidden;
+  }
+  .hero::before {
+    height: 30vh;
+  }
+  .hero__container {
+    display: relative;
+    height: 30vh;
+  }
+  .hero__container__img {
+    display: none;
+  }
+  .hero__container__list {
+    display: none;
+  }
+  .hero__container__list--active-menu {
+    display: block;
+    font-size: 0.7rem;
+    position: absolute;
+    padding: 1em;
+    top: 1em;
+    right: 0em;
+    width: 100vw;
+    background: #fcfcfc;
+  }
+  .hero__container__list__item {
+    padding: 1em 0;
+  }
+  .hero__container__list__item a {
+    color: #392A25;
+  }
+  .hero__container__list__item a:active {
+    -webkit-text-decoration: underline #CBA365;
+            text-decoration: underline #CBA365;
+  }
+  .hero__hamburguer {
+    display: block;
+  }
 }
-
-div {
-  display: flex;
-  background: #FFF;
-  border-radius: 20px;
-  padding: 2em 8em;
-}
-div .story__title {
-  font-size: 3rem;
-  color: #392A25;
-  text-transform: uppercase;
-}
-div .story__texts {
-  padding-top: 1em;
-  font-size: 1.5rem;
-}
-div .story__texts__text {
-  padding: 1em 0;
-  display: flex;
-  line-height: 2.5em;
-}
-div .story__texts__text img {
-  width: 100vw;
-  height: 30vh;
-  border-radius: 10px;
-  margin: 0 1em;
-}
-
-font-face {
-  font-family: "times-new";
-  src: url(../font/times-new-roman.ttf);
-}
-
-font-face {
-  font-family: "one piece";
-  src: url(../font/one\ piece\ font.ttf);
-}
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: times-new;
+  font-family: century;
   overflow-x: hidden;
 }
 
 .main {
   padding: 2em 16em;
   background: #EEEEEE;
+}
+
+.story {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 2em;
+  background: #FFFFFF;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1em;
+}
+.story__texts__title {
+  color: #392A25;
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding-bottom: 0.5em;
+}
+.story__texts__text {
+  font-size: 1.3rem;
+  line-height: 2.4rem;
+}
+.story__img {
+  border-radius: 10px;
+  width: 30vw;
+}
+.story__link {
+  background: #CBA365;
+  display: block;
+  width: 5vw;
+  color: #FFFFFF;
+  padding: 0.5em;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+}
+.story__link:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 640px) {
+  .main {
+    padding: 1em 1em;
+  }
+  .story {
+    display: block;
+  }
+  .story__texts__title {
+    font-size: 1.5rem;
+  }
+  .story__texts__text {
+    font-size: 1rem;
+  }
+  .story__img {
+    border-radius: 10px;
+    width: 70vw;
+  }
+  .story__link {
+    background: #CBA365;
+    display: block;
+    width: 5vw;
+    color: #FFFFFF;
+    padding: 0.5em;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+    margin-top: 1em;
+    width: 30vw;
+  }
+  .story__link:hover {
+    transform: scale(1.1);
+  }
 }/*# sourceMappingURL=main.css.map */

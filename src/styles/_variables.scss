@@ -1,14 +1,62 @@
+// Fontes
 font-face{
     font-family: 'century';
     src: url(../font/century-old-style.otf);
 }
 
-font-face{
-    font-family: 'one piece';
-    src: url(../font/one\ piece\ font.ttf);
+// Texto
+$fontFamily: century;
+$fontTitle: 3rem;
+$fontTitleCell: 1.5rem;
+$fontText: 1.3rem;
+$fontTextCell: 1rem;
+
+
+// Cores
+$colorBrown: #392A25;
+$colorWhite: #FFFFFF;
+$colorUnderline: #80D3FF;
+$colorBtn: #CBA365;
+$background: #EEEEEE;
+
+
+// Mixins de estilo
+@mixin containers{
+    background: $colorWhite;
+    border-radius: 20px;
+    padding: 2em;
 }
 
-font-face{
-    font-family: 'times-new';
-    src: url(../font/times-new-roman.ttf);
+@mixin titles{
+    color: $colorBrown;
+    font-size: $fontTitle;
+    text-transform: uppercase;
+    padding-bottom: 0.5em;
 }
+
+@mixin texts{
+    font-size: $fontText;
+    line-height: 2.4rem;
+}
+
+@mixin images{
+    border-radius: 10px;
+}
+
+@mixin btn{
+    background: $colorBtn;
+    display: block;
+    width: 5vw;
+    color: $colorWhite;;
+    padding: 0.5em;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform .5s ease-in-out;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+// breakpoints
+$breakpointCell:640px;

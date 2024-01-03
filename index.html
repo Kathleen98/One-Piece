@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
     <link rel="stylesheet" href="./src/styles/main.css">
     <!-- <script src="./src/js/main.js" defer></script> -->
+    <script src="./src/js/burger-menu.js"></script>
     <script src="./src/js/wanted.js" defer></script>
     <script src="./src/js/videos.js" defer></script>
     <title>One Piece</title>
@@ -17,33 +18,45 @@
 <body>
     <header class="hero" id="hero">
         <nav class="hero__container">
-            <a href="../../index.html">
-                <img class="nav__container__img" src="./src/img/favicon.ico" alt="Caveira do chapeu de palha">
+            <a class="hero__container__img" href="../../index.html">
+                <img class="hero__container__img__item" src="./src/img/favicon.ico" alt="Caveira do chapeu de palha">
             </a>
             <ul class="hero__container__list">
                 <li class="hero__container__list__item">
                     <a href="./src/pages/story.html">História</a>
                 </li>
-
+                
                 <li class="hero__container__list__item">
-                    <a href="#">Mundo</a>
+                    <a href="">Mundo</a>
                 </li>
-
+                
                 <li class="hero__container__list__item">
-                    <a href="#">Fotos</a>
+                    <a href="#">Akuma No Mi</a>
                 </li>
-
+                
                 <li class="hero__container__list__item">
-                    <a href="#">Vídeos</a>
+                    <a href="#">Personagens</a>
                 </li>
 
             </ul>
         </nav>
+        <span class="hero__hamburguer"></span>
     </header>
-
+    
     <main class="main">
+        
+        <section class="story">
+            <div class="story__texts">
+                <h2 class="story__texts__title">One Piece</h2>
+                <p class="story__texts__text">
+                    Ahoy, aventureiro! Vamos falar sobre essa maravilha dos mares conhecida como One Piece. Criada pelo mago das palavras e traços, Eiichiro Oda, essa saga épica vem conquistando corações desde julho de 1997 na revista Weekly Shōnen Jump. Imagine só, mais de mil capítulos de pura emoção, risadas e pirataria!
+                </p>
+            </div>
+            <img class="story__img" src="https://i.pinimg.com/564x/0b/70/85/0b70851176043ef036561b66f25603ef.jpg" alt="Mapa One Piece">
+            <a class="story__link" href="./src/pages/story.html">Ler mais</a>
+        </section>
 
-        <section  class="timer">
+        <!-- <section  class="timer">
             <div class="timer__container" >
                 <h2 class="timer__container__title">Nova temporada na Netlix em:</h2>
                 <div class="timer__container__counter">
@@ -69,7 +82,7 @@
             <picture class="timer__image">
                 <img class="timer__image__item" src="https://i.pinimg.com/564x/3e/98/d4/3e98d4e7cc10de9710137ab39ff5ea60.jpg" alt="">
             </picture>
-        </section>
+        </section> -->
 
         <section class="wanted">
             <h2 class="wanted__title">
