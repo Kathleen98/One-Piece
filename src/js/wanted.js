@@ -17,7 +17,7 @@ async function searchShowImages () {
         const imgElement = document.createElement('img');
         imgElement.src = image.src;
         imgElement.alt = image.name;
-        imgElement.classList.add('wanted__container__list__item');
+        imgElement.classList.add('wanted__container__list__img');
         imgList.appendChild(imgElement);
 
         containerImages.appendChild(imgList);

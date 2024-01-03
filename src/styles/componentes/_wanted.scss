@@ -1,0 +1,47 @@
+@use '../base/variables';
+
+.wanted{
+    @include variables.containers;
+    margin-top: 1em;
+
+    &__title{
+        text-align: center;
+        @include variables.titles;
+    }
+
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1em;
+
+        &__list{
+            width: 15vw;
+
+            &__img{
+                @include variables.images;
+                width: 15vw;
+            }
+
+        }
+    }
+
+    @media(max-width:variables.$breakpointCell){
+        &__title{
+            font-size: 1.5rem;
+        }
+
+        &__container{
+            display: block;
+
+            &__list{
+                width: auto;
+                padding: 1em 0;
+    
+                &__img{
+                    width: 100%;
+                }
+    
+            }
+        }
+    }
+}
