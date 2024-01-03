@@ -153,6 +153,66 @@ font-face {
   transform: scale(1.1);
 }
 
+.world {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 2em;
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr repeat(2, auto);
+  grid-template-areas: "title title" "north south" "east west";
+  justify-items: center;
+  padding: 2em;
+}
+.world__title {
+  grid-area: title;
+  color: #392A25;
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding-bottom: 0.5em;
+}
+.world__north {
+  grid-area: north;
+}
+.world__north, .world__south, .world__east, .world__west {
+  width: 20vw;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 0.5em;
+}
+.world__north__img, .world__south__img, .world__east__img, .world__west__img {
+  border-radius: 10px;
+  width: 20vw;
+  height: 30vh;
+}
+.world__north__title, .world__south__title, .world__east__title, .world__west__title {
+  color: #392A25;
+  font-size: 1.5rem;
+}
+.world__north__text, .world__south__text, .world__east__text, .world__west__text {
+  line-height: 1.5rem;
+}
+.world__north__link, .world__south__link, .world__east__link, .world__west__link {
+  background: #CBA365;
+  display: block;
+  width: 5vw;
+  color: #FFFFFF;
+  padding: 0.5em;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+}
+.world__north__link:hover, .world__south__link:hover, .world__east__link:hover, .world__west__link:hover {
+  transform: scale(1.1);
+}
+.world__south {
+  grid-area: south;
+}
+
 @media (max-width: 640px) {
   .main {
     padding: 1em 1em;
@@ -183,6 +243,48 @@ font-face {
     width: 30vw;
   }
   .story__link:hover {
+    transform: scale(1.1);
+  }
+  .world {
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 2em;
+    margin-top: 1em;
+    display: block;
+  }
+  .world__title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .world__north, .world__south, .world__east, .world__west {
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 1em 0;
+  }
+  .world__north__img, .world__south__img, .world__east__img, .world__west__img {
+    border-radius: 10px;
+    width: 65vw;
+    height: 30vh;
+  }
+  .world__north__title, .world__south__title, .world__east__title, .world__west__title {
+    text-align: center;
+  }
+  .world__north__text, .world__south__text, .world__east__text, .world__west__text {
+    padding: 1.5em 0;
+  }
+  .world__north__link, .world__south__link, .world__east__link, .world__west__link {
+    background: #CBA365;
+    display: block;
+    width: 5vw;
+    color: #FFFFFF;
+    padding: 0.5em;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+    width: 30vw;
+  }
+  .world__north__link:hover, .world__south__link:hover, .world__east__link:hover, .world__west__link:hover {
     transform: scale(1.1);
   }
 }/*# sourceMappingURL=main.css.map */
