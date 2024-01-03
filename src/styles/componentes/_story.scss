@@ -1,0 +1,59 @@
+@use '../base/variables';
+
+.story{
+    @include variables.containers;
+    background: variables.$colorWhite;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.5fr 2fr 0.3fr;
+    grid-template-areas: "title title" "paragrafy img" "link link";
+    gap: 1em;
+
+    &__title{
+        @include variables.titles();
+        grid-area: title;
+    }
+   
+    &__text{
+        @include variables.texts();
+        grid-area: paragrafy;
+    }
+
+    &__img{
+        @include variables.images();
+        width: 30vw;
+        grid-area: img;
+    }
+
+    &__link{
+        @include variables.btn();
+        grid-area: link;
+        padding: 0.9em 0;
+        display: block;
+    }
+
+    @media(max-width:variables.$breakpointCell){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__title{
+            font-size: variables.$fontTitleCell;
+        }
+        
+        &__text{
+            @include variables.textsCell;
+        }
+
+        &__img{
+            @include variables.images();
+            width: 70vw;
+        }
+
+        &__link{
+            @include variables.btn();
+            margin-top: 1em;
+            width: 30vw;
+        }
+    }
+}

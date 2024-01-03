@@ -1,3 +1,4 @@
+@use '../base/variables';
 .footer{
     padding: 2em 0;
     display: flex;
@@ -20,6 +21,30 @@
             }
 
 }
+    }
+
+    @media(max-width:variables.$breakpointCell){
+        padding:1em;
+
+        &__logo{
+            width: 15vw;
+        }
+    
+        &__texts{
+            font-size: 0.8rem;
+            line-height: 1.2em;
+        }
+    
+        &__socials{
+            &__link{
+                
+                &__img{
+                    width:10vw;
+                }
+    
+    }
+        }
+        
     }
 
 }

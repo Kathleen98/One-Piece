@@ -7,8 +7,8 @@ font-face{
 // Texto
 $fontFamily: century;
 $fontTitle: 3rem;
-$fontTitleCell: 1.5rem;
 $fontText: 1.3rem;
+$fontTitleCell: 1.5rem;
 $fontTextCell: 1rem;
 
 
@@ -37,6 +37,11 @@ $background: #EEEEEE;
 @mixin texts{
     font-size: $fontText;
     line-height: 2.4rem;
+}
+
+@mixin textsCell{
+    font-size: $fontTextCell;
+    line-height: 1.3rem;
 }
 
 @mixin images{

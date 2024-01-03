@@ -1,5 +1,7 @@
 @use './base/variables';
 @use './componentes/hero';
+@use './componentes/story';
+@use './componentes/world';
 @use './componentes/akumanomi';
 @use './componentes/wanted';
 @use './componentes/footer';
@@ -17,158 +19,14 @@
 .main{
      padding: 2em 16em;
      background: variables.$background;
-}
-
-.story{
-    @include variables.containers;
-    background: variables.$colorWhite;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1em;
-   
-    &__texts{
-
-        &__title{
-            @include variables.titles()
-        }
-
-        &__text{
-            @include variables.texts()
-        }
-    }
-
-    &__img{
-        @include variables.images();
-        width: 30vw;
-    }
-
-    &__link{
-        @include variables.btn();
-    }
-}
-
-.world{
-    @include variables.containers;
-    margin-top: 1em;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr repeat(2,auto);
-    grid-template-areas: "title title" "north south" "east west";
-    justify-items: center;
-    padding: 2em;
-
-    &__title{
-        grid-area: title;
-        @include variables.titles;
-    }
-
-    &__north{
-        grid-area: north;
-    }
-
-    &__north,&__south,&__east,&__west{
-        width: 20vw;
-        height: 65vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1em;
-        padding: 0.5em;
-
-        &__img{
-            @include variables.images;
-            width: 20vw;
-            height: 30vh;
-        }
-
-        &__title{
-            color: variables.$colorBrown;
-            font-size: 1.5rem;
-        }
-
-        &__text{
-            line-height: 1.5rem;
-        }
-
-        &__link{
-            @include variables.btn;
-        }
-    }
-
-    &__south{
-        grid-area: south;
-    }
-}
-
-
-@media(max-width:variables.$breakpointCell){
-    .main{
-        padding: 1em 1em;
-    }
-    .story{
-        display: block;
-        
-        &__texts{
-
-            &__title{
-                font-size: variables.$fontTitleCell;
-            }
-
-            &__text{
-                font-size: variables.$fontTextCell;
-            }
-
-        }
-
-        &__img{
-            @include variables.images();
-            width: 70vw;
-        }
-
-        &__link{
-            @include variables.btn();
-            margin-top: 1em;
-            width: 30vw;
-        }
-    }
-
-    .world{
-        @include variables.containers;
-        margin-top: 1em;
-        display: block;
-
-        &__title{
-            font-size: variables.$fontTitleCell;
-            text-align: center;
-        }
-
-        &__north,&__south,&__east,&__west{
-            display: block;
-            width: auto;
-            height: auto;
-            padding: 1em 0;
-
-            &__img{
-                @include variables.images;
-                width: 65vw;
-                height: 30vh;
-            }
     
-            &__title{
-                text-align: center;
-            }
-
-            &__text{
-                padding:1.5em 0
-            }
-    
-            &__link{
-                @include variables.btn;
-                width: 30vw;
-            }
-        }
-
-        
+     @media(max-width:variables.$breakpointCell){
+             padding: 1em 1em;
     }
 }
+
+
+
+
+
 

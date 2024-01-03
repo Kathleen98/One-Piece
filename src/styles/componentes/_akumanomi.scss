@@ -32,3 +32,34 @@
         grid-area: link;
     }
 }
+
+@media(max-width:variables.$breakpointCell){
+    .akumaNoMi{
+        @include variables.containers;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        &__title{
+            font-size: variables.$fontTitleCell;
+        }
+    
+        &__img{
+            width: auto;
+            
+        }
+    
+        &__texts{
+    
+            &__item{
+                @include variables.textsCell;
+                padding-bottom: 1em;
+            }
+        }
+    
+        &__link{
+            width: 30vw;
+        }
+    }
+
+}
