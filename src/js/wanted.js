@@ -23,7 +23,15 @@ async function searchShowImages () {
         containerImages.appendChild(imgList);
         
 
-      })
+      });
+
+      // Adicionando carroussel com JQuery e Slick
+      $('.wanted__container').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+    });
 
   }catch(error) {
     const paragrafyError = document.createElement('p');

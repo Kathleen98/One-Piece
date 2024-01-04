@@ -10,9 +10,7 @@
     }
 
     &__container{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1em;
+        margin-left: 7em;
 
         &__list{
             width: 15vw;
@@ -23,6 +21,10 @@
             }
 
         }
+    }
+
+    .scroll-container{
+        scroll-behavior: smooth;
     }
 
     @media(max-width:variables.$breakpointCell){
@@ -44,4 +46,5 @@
             }
         }
     }
+
 }

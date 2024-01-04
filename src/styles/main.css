@@ -366,9 +366,7 @@ font-face {
   padding-bottom: 0.5em;
 }
 .wanted__container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1em;
+  margin-left: 7em;
 }
 .wanted__container__list {
   width: 15vw;
@@ -376,6 +374,9 @@ font-face {
 .wanted__container__list__img {
   border-radius: 10px;
   width: 15vw;
+}
+.wanted .scroll-container {
+  scroll-behavior: smooth;
 }
 @media (max-width: 640px) {
   .wanted__title {

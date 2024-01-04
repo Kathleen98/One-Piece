@@ -19,7 +19,7 @@ function createFooter(){
 
     const paragraphTwo = document.createElement('p');
     paragraphTwo.textContent = `
-        &copy;Copyright - 2023 | Desenvolvido por Kathleen Santos
+        Copyright 2023 - 2024 | Desenvolvido por Kathleen Santos
     `;
 
     // Adicionando os parágrafos na div
