@@ -81,6 +81,3 @@ A seção Hero serve como a introdução visual do projeto, apresentando uma ima
 ## Agradecimentos
 - Inspirado pelo anime e mangá One Piece.
 
----
-
-Este README fornece uma visão geral das seções principais do projeto. Sinta-se à vontade para ajustar e personalizar conforme necessário para refletir as características específicas do seu projeto.
