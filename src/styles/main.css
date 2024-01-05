@@ -134,6 +134,7 @@ font-face {
   background: #CBA365;
   display: block;
   width: 5vw;
+  height: 6vh;
   color: #FFFFFF;
   padding: 0.5em;
   border-radius: 10px;
@@ -167,6 +168,7 @@ font-face {
     background: #CBA365;
     display: block;
     width: 5vw;
+    height: 6vh;
     color: #FFFFFF;
     padding: 0.5em;
     border-radius: 10px;
@@ -227,6 +229,7 @@ font-face {
   background: #CBA365;
   display: block;
   width: 5vw;
+  height: 6vh;
   color: #FFFFFF;
   padding: 0.5em;
   border-radius: 10px;
@@ -274,6 +277,7 @@ font-face {
     background: #CBA365;
     display: block;
     width: 5vw;
+    height: 6vh;
     color: #FFFFFF;
     padding: 0.5em;
     border-radius: 10px;
@@ -317,6 +321,7 @@ font-face {
   background: #CBA365;
   display: block;
   width: 5vw;
+  height: 6vh;
   color: #FFFFFF;
   padding: 0.5em;
   border-radius: 10px;
@@ -432,7 +437,6 @@ font-face {
   box-sizing: border-box;
   text-decoration: none;
   font-family: century;
-  overflow-x: hidden;
 }
 
 .main {
