@@ -10,42 +10,39 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Seção mares One Piece
     const worldElement = document.querySelector('.world');
-    const endpointAPI = "http://localhost:3000/world";
-    let seas = [];
+    // const api = "https://api-one-piece-seven.vercel.app/content.json";
+    // const endpointAPI = api.world;
 
+    
+    let seas = [];
+    
     async function searchWorld() {
-        try {
-            const search = await fetch(endpointAPI);
-            if (!search.ok) {
-                throw new Error(`HTTP error! Status: ${search.status}`);
+        
+        const search = await fetch("https://api-one-piece-seven.vercel.app/content.json");
+        const api = await search.json();
+        const world = api.world;
+
+        world.forEach((sea) =>{
+            if(sea.name == ""){
+                throw new Error("Mar sem nome cadastrado")
             }
-            seas = await search.json();
-            displaySeas(seas);
-        } catch (error) {
-            const erro = document.createElement('p');
-            erro.textContent = `Houve um erro no carregamento ${error}`
-        }
+            worldElement.innerHTML += `
+                <div class="world__container">
+                    <img class="world__container__img" src="${sea.image}" alt="North Blue">
+                    <h2 class="world__container__title">
+                        ${sea.name}
+                    </h2>
+                    <p class="world__container__text">
+                        ${sea.paragrafy}
+                    </p>
+                    <a class="world__container__link" href="${sea.link}">Ver mais</a>
+                </div>
+            `
+
+        })
     }
 
     searchWorld();
-
-    function displaySeas(listSeas) {
-        listSeas.forEach(sea => {
-            worldElement.innerHTML += `
-            <div class="world__container">
-                <img class="world__container__img" src="${sea.image}" alt="North Blue">
-                <h2 class="world__container__title">
-                    ${sea.name}
-                </h2>
-                <p class="world__container__text">
-                    ${sea.paragrafy}
-                </p>
-                <a class="world__container__link" href="${sea.link}">Ver mais</a>
-            </div>
-            `;
-        });
-    }
-
 
     // Seção Akuma No Mi
     const frutElement = document.querySelector('.akumaNoMi');

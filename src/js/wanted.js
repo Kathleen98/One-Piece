@@ -2,8 +2,9 @@ const containerImages = document.querySelector('.wanted__container');
 
 async function searchShowImages () {
   try{
-    const search = await fetch("http://localhost:3000/images");
-    const images = await search.json();
+    const search = await fetch("https://api-one-piece-seven.vercel.app/content.json");
+    const api = await search.json();
+    const images = api.images;
 
     
       images.forEach((image) =>{
